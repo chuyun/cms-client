@@ -1,0 +1,37 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"extends": ["eslint:recommended", "react-app", "plugin:prettier/recommended"],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"experimentalObjectRestSpread": true,
+			"jsx": true
+		},
+		"sourceType": "module"
+	},
+	"plugins": ["react"],
+	"rules": {
+		"prettier/prettier": "error",
+		"indent": ["error", "tab", { "SwitchCase": 1 }],
+		"linebreak-style": ["error", "unix"],
+		"quotes": ["error", "single"],
+		"semi": ["error", "always"],
+
+		"import/no-webpack-loader-syntax": "off",
+		"no-multi-spaces": "warn",
+		"react/jsx-tag-spacing": "warn",
+		"jsx-quotes": "warn",
+		"react/jsx-closing-bracket-location": "warn",
+		"react/jsx-boolean-value": "warn",
+		"react/no-string-refs": "warn",
+		"react/self-closing-comp": "warn",
+		"react/sort-comp": "warn",
+		"react/jsx-pascal-case": "warn",
+		"no-debugger": "off",
+
+		"no-console": ["off", { "allow": ["warn", "error"] }]
+	}
+}
