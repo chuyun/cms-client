@@ -1,4 +1,4 @@
-import * as type from '../../action/type';
+import * as type from '../action/type';
 const handleData = (state = { isFetching: true, data: {} }, action) => {
 	switch (action.type) {
 		case type.REQUEST_DATA:
